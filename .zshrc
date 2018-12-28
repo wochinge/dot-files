@@ -10,6 +10,13 @@ bindkey '^[[B' history-substring-search-down
 
 ##### END ZSH configuration #####
 
+##### START local configuration #####
+LOCAL_CONFIG_FILE=.zshrc_local
+if [ -f $LOCAL_CONFIG_FILE ]; then
+    source $LOCAL_CONFIG_FILE
+fi
+##### END local configuration #####
+
 ##### START application settings #####
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
