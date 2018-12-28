@@ -1,0 +1,27 @@
+# suggest next command
+zsh-users/zsh-autosuggestions
+
+# ls colors
+robbyrussell/oh-my-zsh path:lib/theme-and-appearance.zsh
+
+# interactive menu completion
+sorin-ionescu/prezto path:modules/completion
+
+# no duplicate history
+sorin-ionescu/prezto path:modules/history
+
+# jump between common folders
+agkozak/zsh-z
+
+# Suggests to use aliases
+MichaelAquilina/zsh-you-should-use
+
+# Theme
+mafredri/zsh-async
+sindresorhus/pure
+
+# higlight files
+zsh-users/zsh-syntax-highlighting
+
+# search in command history
+zsh-users/zsh-history-substring-search
