@@ -37,7 +37,6 @@ brew cask install sourcetree
 brew cask install insomnia
 brew cask install mactex
 brew cask install texstudio
-brew cask intellij-idea
 brew cask install bear
 brew install filezilla
 brew install hub

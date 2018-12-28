@@ -10,7 +10,7 @@ bindkey '^[[B' history-substring-search-down
 
 ##### END ZSH configuration #####
 
-##### Start application settings #####
+##### START application settings #####
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 
