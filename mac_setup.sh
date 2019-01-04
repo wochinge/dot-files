@@ -51,6 +51,8 @@ brew cask install calibre
 # Python dependencies
 pip3 install jupyter
 pip3 install scikit-learn
+brew install pyenv
+brew install pyenv-virtualenv
 pip3 install virtualenv
 
 # Visual studio code dependencies

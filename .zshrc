@@ -26,6 +26,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # pyenv 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # use github cli https://hub.github.com/
 alias git=hub

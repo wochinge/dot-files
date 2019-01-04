@@ -25,3 +25,6 @@ zsh-users/zsh-syntax-highlighting
 
 # search in command history
 zsh-users/zsh-history-substring-search
+
+# zsh completion etc
+zsh-users/zsh-completions
