@@ -40,6 +40,7 @@ brew cask install texstudio
 brew cask install bear
 brew install filezilla
 brew install hub
+brew install autojump
 
 ## Fun
 brew cask install vlc

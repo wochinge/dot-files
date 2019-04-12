@@ -4,14 +4,17 @@ zsh-users/zsh-autosuggestions
 # ls colors
 robbyrussell/oh-my-zsh path:lib/theme-and-appearance.zsh
 
+# git completion
+robbyrussell/oh-my-zsh path:lib/git.zsh
+
 # interactive menu completion
 sorin-ionescu/prezto path:modules/completion
 
 # no duplicate history
 sorin-ionescu/prezto path:modules/history
 
-# jump between common folders
-agkozak/zsh-z
+# Jump between common folders
+robbyrussell/oh-my-zsh path:plugins/autojump
 
 # Suggests to use aliases
 MichaelAquilina/zsh-you-should-use

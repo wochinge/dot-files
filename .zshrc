@@ -8,7 +8,16 @@ alias update_antibody='antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# support for autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 ##### END ZSH configuration #####
+
+##### START utility functions #####
+pyclean () {
+    find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
+}
+##### END utility functions #####
 
 ##### START local configuration #####
 LOCAL_CONFIG_FILE=.zshrc_local
