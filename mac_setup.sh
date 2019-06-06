@@ -29,11 +29,10 @@ brew cask install gpg-suite
 brew cask install iterm2
 brew cask install macdown
 brew cask install visual-studio-code
-brew cask install sequel-pro
 brew cask install tunnelblick
 brew cask install intel-haxm
 brew cask install docker
-brew cask install sourcetree
+brew cask install github
 brew cask install insomnia
 brew cask install mactex
 brew cask install texstudio
@@ -49,6 +48,7 @@ brew cask install gimp
 brew cask install calibre
 
 # Python dependencies
+pip3 install ipython
 pip3 install jupyter
 pip3 install scikit-learn
 brew install pyenv

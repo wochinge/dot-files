@@ -17,6 +17,12 @@ bindkey '^[[B' history-substring-search-down
 pyclean () {
     find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 }
+
+clean_branches () {
+    git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d &&
+    git remote prune origin
+}
+
 ##### END utility functions #####
 
 ##### START local configuration #####
@@ -32,7 +38,7 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 
 # Install hombrew casks in application dir
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
+export PATH="$PATH:/Users/rasa/.local/bin"
 # pyenv 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
