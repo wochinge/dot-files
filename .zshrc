@@ -51,3 +51,5 @@ alias gs='git status'
 alias gp='git push'
 
 ##### END application settings #####
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
