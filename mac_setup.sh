@@ -5,7 +5,7 @@
 
 # Brew dependencies
 brew install git
-brew install python
+brew install python3
 brew install pyenv
 brew cask install java # required for Java
 brew install node
@@ -36,9 +36,14 @@ brew cask install github
 brew cask install insomnia
 brew cask install mactex
 brew cask install texstudio
-brew cask install bear
 brew install filezilla
+brew cask install dbeaver-community
 brew install autojump
+
+# Organizing
+brew cask install bear
+brew cask install todoist
+brew cask install 1password
 
 ## Fun
 brew cask install vlc
