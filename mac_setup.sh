@@ -41,8 +41,6 @@ brew cask install dbeaver-community
 brew install autojump
 
 # Organizing
-brew cask install bear
-brew cask install todoist
 brew cask install 1password
 
 ## Fun
