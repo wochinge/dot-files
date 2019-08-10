@@ -39,6 +39,7 @@ brew cask install texstudio
 brew install filezilla
 brew cask install dbeaver-community
 brew install autojump
+brew install thefuck
 
 # Organizing
 brew cask install 1password

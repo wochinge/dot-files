@@ -52,6 +52,14 @@ alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
 
+# Pyenv alias
+alias pa="pyenv activate"
+
+# https://github.com/nvbn/thefuck config
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias fuck)
+
 ##### END application settings #####
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
