@@ -44,12 +44,20 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # Git aliases
-alias ga='git add -p'
-alias gco='git checkout'
-alias gc='git commit -m'
-alias gs='git status'
-alias gp='git push'
+alias ga="git add -p"
+alias gco="git checkout"
+alias gc="git commit -m"
+alias gc!="git commit --amend"
+alias gs="git status"
+alias gps="git push"
+alias gpl="git pull"
 
 ##### END application settings #####
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
