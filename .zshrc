@@ -51,6 +51,8 @@ alias gc!="git commit --amend"
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
+alias gcom="git checkout master"
+alias gmm="git merge master"
 
 # Pyenv alias
 alias pa="pyenv activate"
