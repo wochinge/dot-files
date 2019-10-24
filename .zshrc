@@ -46,7 +46,7 @@ eval "$(pyenv virtualenv-init -)"
 # Git aliases
 alias ga="git add -p"
 alias gco="git checkout"
-alias gc="git commit -m"
+alias gc="git commit"
 alias gc!="git commit --amend"
 alias gs="git status"
 alias gps="git push"
@@ -56,6 +56,9 @@ alias gmm="git merge master"
 
 # Pyenv alias
 alias pa="pyenv activate"
+
+# docker-compose alias
+alias dc="docker-compose"
 
 # https://github.com/nvbn/thefuck config
 eval $(thefuck --alias)
@@ -71,3 +74,9 @@ if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-
 
 # The next line enables shell command completion for gcloud.
 if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+
+export RASA_X_PASSWORD="test"
+
+# Rasa CLI completion script
+source /Users/tobias/Workspace/rasa-cli-completion/rasa_cli_completion/rasa-complete.sh
+export RASA_COMPLETE_SCRIPT=/Users/tobias/Workspace/rasa-cli-completion/rasa_cli_completion/rasa_complete.py
