@@ -53,6 +53,7 @@ alias gps="git push"
 alias gpl="git pull"
 alias gcom="git checkout master"
 alias gmm="git merge master"
+alias gl="git log"
 
 # Pyenv alias
 alias pa="pyenv activate"
