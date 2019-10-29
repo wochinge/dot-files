@@ -11,6 +11,7 @@ brew cask install java # required for Java
 brew install node
 brew install poppler
 brew install wget
+brew install ruby
 
 # Brew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

@@ -80,3 +80,12 @@ export RASA_X_PASSWORD="test"
 # Rasa CLI completion script
 source /Users/tobias/Workspace/rasa-cli-completion/rasa_cli_completion/rasa-complete.sh
 export RASA_COMPLETE_SCRIPT=/Users/tobias/Workspace/rasa-cli-completion/rasa_cli_completion/rasa_complete.py
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Use ruby from brew and not the default mac one
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/tobias/.travis/travis.sh ] && source /Users/tobias/.travis/travis.sh

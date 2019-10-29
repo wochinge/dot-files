@@ -20,8 +20,7 @@ robbyrussell/oh-my-zsh path:plugins/autojump
 MichaelAquilina/zsh-you-should-use
 
 # Theme
-mafredri/zsh-async
-sindresorhus/pure
+romkatv/powerlevel10k
 
 # higlight files
 zsh-users/zsh-syntax-highlighting
