@@ -23,6 +23,11 @@ clean_branches () {
     git remote prune origin
 }
 
+git_checkout_based_on_pattern () {
+    matching_branch=$(echo $(git branch -a | grep -m 1 "$1"))
+    gco $matching_branch
+}
+
 ##### END utility functions #####
 
 ##### START local configuration #####
@@ -46,6 +51,8 @@ eval "$(pyenv virtualenv-init -)"
 # Git aliases
 alias ga="git add -p"
 alias gco="git checkout"
+alias gcol="gco @{-1}" # checkout last branch
+alias gcor="git_checkout_based_on_pattern"
 alias gc="git commit"
 alias gc!="git commit --amend"
 alias gs="git status"
