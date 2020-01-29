@@ -67,6 +67,7 @@ alias pa="pyenv activate"
 
 # docker-compose alias
 alias dc="docker-compose"
+alias k="kubectl"
 
 # https://github.com/nvbn/thefuck config
 eval $(thefuck --alias)
