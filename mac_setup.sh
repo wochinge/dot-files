@@ -41,6 +41,7 @@ brew install filezilla
 brew cask install dbeaver-community
 brew install autojump
 brew install thefuck
+brew install kubectx
 
 # Organizing
 brew cask install 1password
