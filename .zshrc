@@ -18,14 +18,9 @@ pyclean () {
     find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 }
 
-clean_branches () {
-    git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d &&
-    git remote prune origin
-}
-
 git_checkout_based_on_pattern () {
     matching_branch=$(echo $(git branch -a | grep -m 1 "$1"))
-    gco $matching_branch
+    git checkout ${matching_branch}
 }
 
 ##### END utility functions #####
@@ -51,30 +46,40 @@ eval "$(pyenv virtualenv-init -)"
 # Git aliases
 alias ga="git add -p"
 alias gco="git checkout"
-alias gcol="gco @{-1}" # checkout last branch
+alias gcol="git checkout @{-1}" # checkout last branch
 alias gcor="git_checkout_based_on_pattern"
 alias gc="git commit"
 alias gc!="git commit --amend"
+alias gbd='git fetch -p; git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+# alias gc!!="git commit --amend --no-edit"
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
 alias gcom="git checkout master"
 alias gmm="git merge master"
-alias gl="git log"
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gd="git diff --word-diff=color"
 
 # Pyenv alias
 alias pa="pyenv activate"
 
-# docker-compose alias
+# docker / cluster aliases
 alias dc="docker-compose"
 alias k="kubectl"
 alias kns="kubens"
 alias ktx="kubectx"
 
+# # Other alias
+alias ls="ls -alG"
+
 # https://github.com/nvbn/thefuck config
 eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefuck --alias fuck)
+
+# Kubectl autocomplete (https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+source <(kubectl completion zsh)
+complete -F __start_kubectl k
 
 ##### END application settings #####
 

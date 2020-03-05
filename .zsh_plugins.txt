@@ -22,7 +22,7 @@ MichaelAquilina/zsh-you-should-use
 # Theme
 romkatv/powerlevel10k
 
-# higlight files
+# highlight files
 zsh-users/zsh-syntax-highlighting
 
 # search in command history
