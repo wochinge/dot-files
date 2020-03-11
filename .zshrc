@@ -23,6 +23,12 @@ git_checkout_based_on_pattern () {
     git checkout ${matching_branch}
 }
 
+# Get latest x branch
+latest_x_branch () {
+    latest_tag=$(git describe --tags --abbrev=0 --exclude "*a*" $(git rev-list --tags --max-count=1))
+    echo ${latest_tag%.*}.x
+}
+
 ##### END utility functions #####
 
 ##### START local configuration #####
@@ -47,11 +53,11 @@ eval "$(pyenv virtualenv-init -)"
 alias ga="git add -p"
 alias gco="git checkout"
 alias gcol="git checkout @{-1}" # checkout last branch
-alias gcor="git_checkout_based_on_pattern"
+alias gcox='git checkout $(latest_x_branch)'
+alias gcor='git_checkout_based_on_pattern'
 alias gc="git commit"
 alias gc!="git commit --amend"
 alias gbd='git fetch -p; git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
-# alias gc!!="git commit --amend --no-edit"
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
