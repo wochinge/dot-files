@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ##### START ZSH configuration #####
 # Using https://github.com/getantibody/antibody with static imports
 source ~/.zsh_plugins.sh
@@ -51,9 +58,9 @@ eval "$(pyenv virtualenv-init -)"
 
 # Git aliases
 alias ga="git add -p"
-alias gco="git checkout"
-alias gcol="git checkout @{-1}" # checkout last branch
-alias gcox='git checkout $(latest_x_branch)'
+alias gco="git switch"
+alias gcol="git switch @{-1}" # checkout last branch
+alias gcox='git switch $(latest_x_branch)'
 alias gcor='git_checkout_based_on_pattern'
 alias gc="git commit"
 alias gc!="git commit --amend"
@@ -61,6 +68,7 @@ alias gbd='git fetch -p; git branch --merged | egrep -v "(^\*|master|dev)" | xar
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
+alias gplf="git fetch && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD) && git pull"
 alias gcom="git checkout master"
 alias gmm="git merge master"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -74,9 +82,9 @@ alias dc="docker-compose"
 alias k="kubectl"
 alias kns="kubens"
 alias ktx="kubectx"
-
+alias wp="watch kubectl get pods"
 # # Other alias
-alias ls="ls -alG"
+alias ls="ls -alGh"
 
 # https://github.com/nvbn/thefuck config
 eval $(thefuck --alias)
