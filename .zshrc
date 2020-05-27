@@ -68,6 +68,7 @@ alias gbd='git fetch -p; git branch --merged | egrep -v "(^\*|master|dev)" | xar
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
+alias gr!="git reset --hard"
 alias gplf="git fetch && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD) && git pull"
 alias gcom="git checkout master"
 alias gmm="git merge master"
