@@ -18,6 +18,9 @@ bindkey '^[[B' history-substring-search-down
 # support for autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
+# allow comments in interactive shells (like Bash does)
+setopt INTERACTIVE_COMMENTS
+
 ##### END ZSH configuration #####
 
 ##### START utility functions #####
