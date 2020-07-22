@@ -90,11 +90,6 @@ alias wp="watch kubectl get pods"
 # # Other alias
 alias ls="ls -alGh"
 
-# https://github.com/nvbn/thefuck config
-eval $(thefuck --alias)
-# You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias fuck)
-
 # Kubectl autocomplete (https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 source <(kubectl completion zsh)
 complete -F __start_kubectl k
