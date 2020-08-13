@@ -42,6 +42,7 @@ brew cask install dbeaver-community
 brew install autojump
 brew install kubectx
 brew install gh
+brew install websocat
 
 # Organizing
 brew cask install 1password
