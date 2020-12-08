@@ -43,6 +43,10 @@ brew install autojump
 brew install kubectx
 brew install gh
 brew install websocat
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+brew install bat
+
 
 # Organizing
 brew cask install 1password

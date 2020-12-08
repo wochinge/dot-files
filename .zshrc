@@ -28,9 +28,12 @@ pyclean () {
     find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 }
 
-git_checkout_based_on_pattern () {
-    matching_branch=$(echo $(git branch -a | grep -m 1 "$1"))
-    git checkout ${matching_branch}
+fco() {
+  local branches branch
+  branches=$(git branch --all | grep -v HEAD) &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
 
 # Get latest x branch
@@ -78,6 +81,7 @@ alias gcom="git checkout master"
 alias gmm="git merge master"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gd="git diff --word-diff=color"
+alias cat="bat"
 
 # Pyenv alias
 alias pa="pyenv activate"
@@ -117,5 +121,5 @@ export RASA_COMPLETE_SCRIPT=/Users/tobias/Workspace/rasa-cli-completion/rasa_cli
 # Use ruby from brew and not the default mac one
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
-# added by travis gem
-[ -f /Users/tobias/.travis/travis.sh ] && source /Users/tobias/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
