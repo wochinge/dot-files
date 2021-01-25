@@ -77,10 +77,10 @@ alias gpl="git pull --ff-only"
 alias gplr="git pull --rebase"
 alias gr!="git reset --hard"
 alias gplf="git fetch && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD) && git pull"
-alias gcom="git checkout master"
+alias gcom="git checkout main"
 alias gmm="git merge master"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gd="git diff --word-diff=color"
+alias gd="git diff"
 alias cat="bat"
 
 # Pyenv alias
