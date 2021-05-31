@@ -59,8 +59,14 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="$PATH:/Users/rasa/.local/bin"
 # pyenv 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# Load pyenv into the shell by adding
+# the following to ~/.zshrc:
+
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # Git aliases
 alias ga="git add -p"
