@@ -62,10 +62,6 @@ export PATH="$PATH:/Users/rasa/.local/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
-# Load pyenv into the shell by adding
-# the following to ~/.zshrc:
-
 eval "$(pyenv init -)"
 
 # Git aliases
@@ -128,3 +124,5 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
 # to use older node version for Rasa X
 export PATH="/usr/local/opt/node@14/bin:$PATH"
+
+export PATH="$HOME/.poetry/bin:$PATH"
