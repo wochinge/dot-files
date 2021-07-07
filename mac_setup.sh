@@ -7,38 +7,38 @@
 brew install git
 brew install python3
 brew install pyenv
-brew cask install java # required for Java
+brew install java # required for Java
 brew install node
 brew install poppler
 brew install wget
 brew install ruby
 
-# Brew cask
+# Brew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ## Crucial
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install keeweb
-brew cask install google-backup-and-sync
-brew cask install keka
-brew cask install skype
-brew cask install franz
-brew cask install gpg-suite
+brew install dropbox
+brew install google-chrome
+brew install keeweb
+brew install google-backup-and-sync
+brew install keka
+brew install skype
+brew install franz
+brew install gpg-suite
 
 ## Developer
-brew cask install iterm2
-brew cask install macdown
-brew cask install visual-studio-code
-brew cask install tunnelblick
-brew cask install intel-haxm
-brew cask install docker
-brew cask install github
-brew cask install insomnia
-brew cask install mactex
-brew cask install texstudio
+brew install iterm2
+brew install macdown
+brew install visual-studio-code
+brew install tunnelblick
+brew install intel-haxm
+brew install docker
+brew install github
+brew install insomnia
+brew install mactex
+brew install texstudio
 brew install filezilla
-brew cask install dbeaver-community
+brew install dbeaver-community
 brew install autojump
 brew install kubectx
 brew install gh
@@ -49,14 +49,14 @@ brew install bat
 
 
 # Organizing
-brew cask install 1password
+brew install 1password
 
 ## Fun
-brew cask install vlc
-brew cask install spotify
-brew cask install teamviewer
-brew cask install gimp
-brew cask install calibre
+brew install vlc
+brew install spotify
+brew install teamviewer
+brew install gimp
+brew install calibre
 
 # Python dependencies
 pip3 install ipython
