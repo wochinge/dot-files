@@ -65,7 +65,6 @@ code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension ms-python.python
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension MS-CEINTL.vscode-language-pack-de
-code --install-extension James-Yu.latex-workshop
 code --install-extension jebbs.plantuml
 
 # ZSH
