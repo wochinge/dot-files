@@ -5,11 +5,9 @@
 
 # Brew dependencies
 brew install git
-brew install python3
 brew install pyenv
 brew install java # required for Java
 brew install node
-brew install poppler
 brew install wget
 brew install ruby
 
@@ -19,12 +17,11 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 ## Crucial
 brew install dropbox
 brew install google-chrome
-brew install keeweb
 brew install google-backup-and-sync
 brew install keka
 brew install skype
-brew install franz
-brew install gpg-suite
+brew install slack
+brew install fork
 
 ## Developer
 brew install iterm2
@@ -47,7 +44,6 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install bat
 
-
 # Organizing
 brew install 1password
 
@@ -58,13 +54,10 @@ brew install teamviewer
 brew install gimp
 brew install calibre
 
-# Python dependencies
-pip3 install ipython
-pip3 install jupyter
-pip3 install scikit-learn
+# Python
 brew install pyenv
 brew install pyenv-virtualenv
-pip3 install virtualenv
+pyenv virtualenv 3.8.10 rasa
 
 # Visual studio code dependencies
 code --install-extension streetsidesoftware.code-spell-checker
