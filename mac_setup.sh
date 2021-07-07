@@ -43,6 +43,7 @@ brew install websocat
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install bat
+brew install htop
 
 # Organizing
 brew install 1password
