@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Install homebrew 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Brew dependencies
 brew install git
 brew install pyenv
 brew install java # required for Java
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install node
 brew install wget
 brew install ruby
