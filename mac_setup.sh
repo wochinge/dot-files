@@ -62,6 +62,7 @@ brew install signal
 # Python
 brew install pyenv
 brew install pyenv-virtualenv
+pyenv install 3.8.10
 pyenv virtualenv 3.8.10 rasa
 
 # Visual studio code dependencies
