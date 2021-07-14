@@ -32,8 +32,6 @@ brew install intel-haxm
 brew install docker
 brew install github
 brew install insomnia
-brew install mactex
-brew install texstudio
 brew install filezilla
 brew install dbeaver-community
 brew install autojump
