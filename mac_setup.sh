@@ -22,6 +22,9 @@ brew install keka
 brew install skype
 brew install slack
 brew install fork
+brew install rectangle
+brew install contexts
+brew install alfred
 
 ## Developer
 brew install iterm2
@@ -52,6 +55,9 @@ brew install spotify
 brew install teamviewer
 brew install gimp
 brew install calibre
+brew install miro
+brew install zoom
+brew install signal
 
 # Python
 brew install pyenv
