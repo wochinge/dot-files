@@ -72,7 +72,7 @@ alias gcox='git switch $(latest_x_branch)'
 alias gcor='git_checkout_based_on_pattern'
 alias gc="git commit"
 alias gc!="git commit --amend"
-alias gbd='git fetch -p; git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+alias gbd='git fetch -p; git branch --merged | egrep -v "(^\*|master|dev|main)" | xargs git branch -d'
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull --ff-only"
@@ -80,7 +80,7 @@ alias gplr="git pull --rebase"
 alias gr!="git reset --hard"
 alias gplf="git fetch && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD) && git pull"
 alias gcom="git checkout main"
-alias gmm="git merge master"
+alias gmm="git merge main"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gd="git diff"
 alias cat="bat"
