@@ -84,6 +84,7 @@ alias gmm="git merge main"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gd="git diff"
 alias ghs="gh pr status"
+alias ghpr="gh pr list --search \"review-requested:@me -author:app/dependabot\""
 alias cat="bat"
 
 # Pyenv alias
