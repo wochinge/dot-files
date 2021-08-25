@@ -83,6 +83,7 @@ alias gcom="git checkout main"
 alias gmm="git merge main"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gd="git diff"
+alias ghs="gh pr status"
 alias cat="bat"
 
 # Pyenv alias
