@@ -102,7 +102,7 @@ alias ls="ls -alGh"
 
 # Kubectl autocomplete (https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 source <(kubectl completion zsh)
-complete -F __start_kubectl k
+compdef __start_kubectl k
 
 ##### END application settings #####
 
@@ -121,7 +121,6 @@ export RASA_X_PASSWORD="test"
 
 # Use ruby from brew and not the default mac one
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
