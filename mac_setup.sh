@@ -45,6 +45,7 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install bat
 brew install htop
+brew install google-cloud-sdk
 
 # Organizing
 brew install 1password
