@@ -78,4 +78,4 @@ brew install graphviz # required for plantuml
 # ZSH
 touch .hushlogin # suppress `last login` message
 brew install zsh
-brew install getantibody/tap/antibody
+brew install antibody
