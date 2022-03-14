@@ -165,7 +165,4 @@ if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-
 # to use older node version for Rasa X
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 
-# Rasa Enterprise Local
-export RASA_X_PASSWORD="test"
-
 export PATH="$HOME/.poetry/bin:$PATH"
