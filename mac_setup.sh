@@ -34,7 +34,7 @@ brew install docker
 brew install github
 brew install insomnia
 brew install dbeaver-community
-brew install autojump
+brew install zoxide
 brew install kubectx
 brew install gh
 brew install websocat
