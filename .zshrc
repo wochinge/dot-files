@@ -112,9 +112,6 @@ fco() {
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 
-# Install hombrew casks in application dir
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH="$PATH:/Users/rasa/.local/bin"
 # pyenv 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -146,7 +143,7 @@ alias ghpr="gh pr list --search \"review-requested:@me -author:app/dependabot\""
 alias cat="bat"
 
 # docker / cluster aliases
-alias dc="docker-compose"
+alias dc="docker compose"
 alias k="kubectl"
 alias kns="kubens"
 alias ktx="kubectx"
@@ -155,3 +152,5 @@ alias wp="watch kubectl get pods"
 alias ls="ls -alGh"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+# Latex
+export PATH="/Library/TeX/texbin:$PATH"
