@@ -144,10 +144,10 @@ alias cat="bat"
 
 # docker / cluster aliases
 alias dc="docker compose"
-alias k="kubectl"
-alias kns="kubens"
-alias ktx="kubectx"
-alias wp="watch kubectl get pods"
+alias -g k="kubectl"
+alias -g kns="kubens"
+alias -g ktx="kubectx"
+
 # # Other alias
 alias ls="ls -alGh"
 
