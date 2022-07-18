@@ -151,6 +151,10 @@ alias -g ktx="kubectx"
 # # Other alias
 alias ls="ls -alGh"
 
+# Deepset
+alias dprod='aws-vault exec DC-workload-prod.AWSAdministratorAccess --'
+alias dtest='aws-vault exec tobias-deepset-old-org --'
+
 export PATH="$HOME/.poetry/bin:$PATH"
 # Latex
 export PATH="/Library/TeX/texbin:$PATH"
