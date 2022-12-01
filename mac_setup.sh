@@ -37,6 +37,7 @@ brew install dbeaver-community
 brew install zoxide
 brew install kubectx
 brew install gh
+gh extension install mislav/gh-branch
 brew install websocat
 brew install fzf
 $(brew --prefix)/opt/fzf/install
