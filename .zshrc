@@ -142,7 +142,7 @@ alias gpl="git pull --ff-only"
 alias gplr="git pull --rebase"
 alias gr!="git reset --hard"
 alias gplf="git fetch && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD) && git pull"
-alias gcom="git checkout master"
+alias gcom="git checkout main"
 alias gmm="git merge main"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gd="git diff"
@@ -169,3 +169,4 @@ export PATH="/Library/TeX/texbin:$PATH"
 
 z4h install wfxr/forgit || return
 z4h load   wfxr/forgit
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
