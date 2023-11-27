@@ -8,9 +8,11 @@
 	email = tobias.wochinger@deepset.ai
 [alias]
   fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
+  gone = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs git branch -D"
 [push]
 	autoSetupRemote = true
 [checkout]
 	defaultRemote = origin
 [init]
 	defaultBranch = main
+    
