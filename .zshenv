@@ -44,3 +44,5 @@ fi
 
 setopt rcs
 . "$HOME/.cargo/env"
+
+alias assume=". assume"

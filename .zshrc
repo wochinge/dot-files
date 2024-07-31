@@ -154,14 +154,16 @@ alias -g ktx="kubectx"
 alias ls="ls -alGh"
 
 # Deepset
-alias dprod='aws-vault exec DC-workload-prod.AWSAdministratorAccess --'
-alias dtest='aws-vault exec tobias-deepset-old-org --'
+alias prod='assume prod && ktx dc-prod-euc1-app'
+alias dev='assume dev && ktx dc-dev-euc1-app'
 
 export PATH="$HOME/.poetry/bin:$PATH"
 # Latex
 export PATH="/Library/TeX/texbin:$PATH"
 # Go
-export PATH="$HOME/go/bin:$PATH"$
+export PATH="$HOME/go/bin:$PATH"
+# Kubectl plugins
+export PATH="$HOME/.kubectl-plugins:$PATH"
 
 z4h install wfxr/forgit || return
 z4h load   wfxr/forgit
